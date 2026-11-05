@@ -66,7 +66,7 @@ class SimulationEngine:
         self._current_grid = next_grid
         self._all_states.append(next_grid)
 
-        if self.storage is not None and self.params.store_intermediate:
+        if self.storage is not None:
             self.storage.add_state(next_grid)
 
         return next_grid
