@@ -1,0 +1,27 @@
+{
+  "automaton": {
+    "name": "Forest Fire",
+    "dimension": 2,
+    "neighborhood_type": "MOORE",
+    "rule": "ForestFireRule",
+    "cell_types": [
+      { "name": "Empty", "symbol": ".", "color_hex": "#1a0a00" },
+      { "name": "Tree",  "symbol": "T", "color_hex": "#228b22" },
+      { "name": "Fire",  "symbol": "F", "color_hex": "#ff4500" }
+    ]
+  },
+  "params": {
+    "width": 5,
+    "height": 4,
+    "num_generations": 6,
+    "boundary_type": "FIXED",
+    "init_mode": "CUSTOM",
+    "random_seed": 42
+  },
+  "init_cells": [
+    [1, 1, 1, 1, 0],
+    [1, 1, 0, 1, 1],
+    [0, 1, 2, 1, 1],
+    [1, 1, 1, 1, 1]
+  ]
+}

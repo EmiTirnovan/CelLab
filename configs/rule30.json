@@ -1,0 +1,23 @@
+{
+  "automaton": {
+    "name": "Rule 30 (Wolfram 1D)",
+    "dimension": 1,
+    "neighborhood_type": "ELEMENTARY_1D",
+    "rule": "Rule30",
+    "cell_types": [
+      { "name": "Dead",  "symbol": ".", "color_hex": "#1a1a2e" },
+      { "name": "Alive", "symbol": "1", "color_hex": "#e94560" }
+    ]
+  },
+  "params": {
+    "width": 13,
+    "height": 1,
+    "num_generations": 6,
+    "boundary_type": "FIXED",
+    "init_mode": "CUSTOM",
+    "random_seed": 42
+  },
+  "init_cells": [
+    [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+  ]
+}

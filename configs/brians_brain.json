@@ -1,0 +1,26 @@
+{
+  "automaton": {
+    "name": "Brian's Brain",
+    "dimension": 2,
+    "neighborhood_type": "MOORE",
+    "rule": "BriansBrainRule",
+    "cell_types": [
+      { "name": "Off",    "symbol": ".", "color_hex": "#0d0d1a" },
+      { "name": "Firing", "symbol": "F", "color_hex": "#00d4ff" },
+      { "name": "Dying",  "symbol": "D", "color_hex": "#0066ff" }
+    ]
+  },
+  "params": {
+    "width": 5,
+    "height": 3,
+    "num_generations": 5,
+    "boundary_type": "WRAP",
+    "init_mode": "CUSTOM",
+    "random_seed": 42
+  },
+  "init_cells": [
+    [0, 0, 1, 0, 0],
+    [0, 1, 0, 1, 0],
+    [0, 0, 0, 0, 0]
+  ]
+}
